@@ -19,6 +19,8 @@ add_subdirectory(src/Math)
 # Add third-party dependencies
 add_subdirectory(third_party/Catch2)
 
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
 # (optional) add tests
 option(BUILD_TESTS "Build unit tests" ON)
 if(BUILD_TESTS)
