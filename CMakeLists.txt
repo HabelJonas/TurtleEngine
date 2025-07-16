@@ -16,6 +16,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # add the Math module
 add_subdirectory(src/Math)
+# Add third-party dependencies
+add_subdirectory(third_party/Catch2)
 
 # (optional) add tests
 option(BUILD_TESTS "Build unit tests" ON)
