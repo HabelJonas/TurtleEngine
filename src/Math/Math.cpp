@@ -1,4 +1,4 @@
-#include  "TurtleEngine/Math.hpp"
+#include "TurtleEngine/Math.hpp"
 #include <cmath>
 
 namespace Turtle

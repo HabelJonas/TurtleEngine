@@ -43,3 +43,4 @@
 # .vs folder
 .vs/
 out/
+build/
