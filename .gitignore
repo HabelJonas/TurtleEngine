@@ -42,4 +42,4 @@
 
 # .vs folder
 .vs/
-.out/*
+out/
