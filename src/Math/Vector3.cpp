@@ -5,7 +5,7 @@ namespace Turtle
 {
 	namespace Math
 	{
-		Vector3::Vector3(float x, float y, float z) : x_(x), y_(y), z_(z)
+		Vector3::Vector3(float x, float y, float z) : x(x), y(y), z(z)
 		{
 		}
 		Vector3 Vector3::operator+(Vector3 const& v) const

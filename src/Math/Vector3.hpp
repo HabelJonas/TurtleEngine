@@ -7,7 +7,7 @@ namespace Turtle
 		class Vector3 
 		{
 		public:
-			float x_, y_, z_;
+			float x, y, z;
 
 			Vector3(float x = 0, float y = 0, float z = 0);
 			Vector3 operator+(Vector3 const& v) const;
