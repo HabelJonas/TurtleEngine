@@ -8,6 +8,7 @@ namespace Turtle
 		Vector3::Vector3(float x, float y, float z) : x(x), y(y), z(z)
 		{
 		}
+
 		Vector3 Vector3::operator+(Vector3 const& v) const
 		{
 			return Vector3();
@@ -15,6 +16,14 @@ namespace Turtle
 		Vector3 Vector3::operator-(Vector3 const& v) const
 		{
 			return Vector3();
+		}
+		float& Vector3::operator[](int i)
+		{
+			return ((&x)[i]);
+		}
+		const float& Vector3::operator[](int i) const
+		{
+			return ((&x)[i]);
 		}
 		float Vector3::Dot(Vector3 const& v) const
 		{
