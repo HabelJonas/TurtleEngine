@@ -1,5 +1,7 @@
 # 🎮 TurtleEngine – A Modular C++ Game Engine (WIP)
 
+![GitHub Actions Status](https://github.com/HabelJonas/TurtleEngine/blob/main/.github/workflows/cmake-multi-platform.yml/badge.svg)
+
 **TurtleEngine** is a modular, lightweight C++ game engine built from scratch, starting with a custom math library.  
 It’s designed with a clean architecture and modern CMake project layout, making it ideal for learning, extensibility, and experimentation.
 
