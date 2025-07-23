@@ -2,12 +2,16 @@
 #include <catch2/catch_all.hpp>
 #include "TurtleEngine/Vector3.hpp"
 
-TEST_CASE("Vector3 basic operations")
+TEST_CASE("Vector3 addition")
 {
+	// Arrange
 	Turtle::Math::Vector3 a{ 1,2,3 }, b{ 3,2,1 };
-    REQUIRE((a + b).x == 4);
-    //REQUIRE(a.Dot(b) == 1 * 3 + 2 * 2 + 3 * 1);
-    //auto c = a.Cross(b);
-    //REQUIRE(c.x == (2 * 1 - 3 * 2));
-    //REQUIRE(a.Normalized().Length() == Approx(1.0f));
+
+	// Act
+	Turtle::Math::Vector3 result = a + b;
+
+	// Assert
+    REQUIRE(result.x == 4);
+    REQUIRE(result.y == 4);
+    REQUIRE(result.z == 4);
 }

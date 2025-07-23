@@ -15,7 +15,7 @@ namespace Turtle
 		}
 		Vector3 Vector3::operator-(Vector3 const& v) const
 		{
-			return Vector3();
+			return Vector3(x - v.x, y - v.y, z - v.z);
 		}
 		float& Vector3::operator[](int i)
 		{
