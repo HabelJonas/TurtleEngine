@@ -15,3 +15,17 @@ TEST_CASE("Vector3 addition")
     REQUIRE(result.y == 4);
     REQUIRE(result.z == 4);
 }
+
+TEST_CASE("Vector3 subtraction")
+{
+	// Arrange
+	Turtle::Math::Vector3 a{ 4,4,4 }, b{ 2,2,2 };
+
+	// Act
+	Turtle::Math::Vector3 result = a - b;
+
+	// Assert
+	REQUIRE(result.x == 2);
+	REQUIRE(result.y == 2);
+	REQUIRE(result.z == 2);
+}
