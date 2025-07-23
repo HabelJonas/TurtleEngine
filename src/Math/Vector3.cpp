@@ -1,4 +1,5 @@
 #include "TurtleEngine/Vector3.hpp"
+#include <cassert>
 
 namespace Turtle
 {
@@ -20,12 +21,28 @@ namespace Turtle
 
 		float& Vector3::operator[](int i)
 		{
-			return ((&x)[i]);
+			assert(i >= 0 && i < 3 && "Vector3 subscript out of range.");
+			switch (i) 
+			{
+			case 0: return x;
+			case 1: return y;
+			case 2: return z;
+			default:
+				return x;
+			}
 		}
 
 		const float& Vector3::operator[](int i) const
 		{
-			return ((&x)[i]);
+			assert(i >= 0 && i < 3 && "Vector3 subscript out of range.");
+			switch (i) 
+			{
+			case 0: return x;
+			case 1: return y;
+			case 2: return z;
+			default:
+				return x;
+			}
 		}
 
 		float Vector3::Dot(Vector3 const& v) const
