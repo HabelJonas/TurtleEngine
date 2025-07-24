@@ -113,3 +113,16 @@ TEST_CASE("Vector3 subscript operator")
 		}
 	}
 #endif
+
+
+TEST_CASE("Dot product of two vectors.")
+{
+	// Arrange
+	Turtle::Math::Vector3 a{ 1,2,3 }, b{ 4,5,6 };
+
+	// Act
+	float result = a.Dot(b);
+
+	// Assert
+	REQUIRE(result == 32);	
+}

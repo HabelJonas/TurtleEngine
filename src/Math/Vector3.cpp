@@ -47,7 +47,7 @@ namespace Turtle
 
 		float Vector3::Dot(Vector3 const& v) const
 		{
-			return 0.0f;
+			return x * v.x + y * v.y + z * v.z;
 		}
 
 		Vector3 Vector3::Cross(Vector3 const& v) const
